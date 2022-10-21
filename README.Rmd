@@ -1,8 +1,9 @@
 ---
 title: "Generating Animated GIFs and plots for NFL Tracking data using ggplot"
-author: "Pablo Landeros"
-date: "2022-10-21"
-output: html_document
+#: "Pablo Landeros"
+#date: "2022-10-21"
+output: rmarkdown::github_document
+always_allow_html: true
 ---
 
 This is meant to be a very simple implementation of a collection of functions to plot frames and animate the tracking data housed in the [Big Data Bowl Kaggle Competition](https://www.kaggle.com/competitions/nfl-big-data-bowl-2023/data).
