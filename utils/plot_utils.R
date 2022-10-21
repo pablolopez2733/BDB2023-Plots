@@ -159,7 +159,8 @@ play_animation <- function(onePlay_)
     )+
     geom_point(
       data = onePlay_,
-      mapping = aes(x = x, y = y, color = color1 )
+      mapping = aes(x = x, y = y, color = color1 ),
+      size = 4
     ) +
     scale_colour_manual(values = colores) +
     labs(

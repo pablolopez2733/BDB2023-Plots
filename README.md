@@ -1,7 +1,5 @@
 Generating Animated GIFs and plots for NFL Tracking data using ggplot
 ================
-Pablo Landeros
-2022-10-21
 
 This is meant to be a very simple implementation of a collection of
 functions to plot frames and animate the tracking data housed in the
