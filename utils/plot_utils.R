@@ -115,7 +115,12 @@ plot_frame <- function(onePlay_, frame_)
       mapping = aes(x = x, y = y, color = color1 )
       ) +
     scale_colour_manual(values = colores) +
-    theme(title = )
+    labs(
+      title = play_desc,
+      caption = "Data: Big Data Bowl 2023"
+    ) +
+    theme(legend.position="none")
+    
   
   return(one_frame)
   
@@ -123,7 +128,6 @@ plot_frame <- function(onePlay_, frame_)
 
 play_animation <- function(onePlay_)
 {
-  #  Take one frame from one play, plot a scatter plot image.
   
   # Check for data
   if(is.null(onePlay_)) {
@@ -162,7 +166,7 @@ play_animation <- function(onePlay_)
       title = play_desc,
       caption = "Data: Big Data Bowl 2023"
     ) +
-    theme(legend.position="none")
+    theme(legend.position="none")+
     # animation stuff
     transition_time(frameId) +
     ease_aes('linear') +
